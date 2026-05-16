@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Екатерина Сергеевна & Андрей Вячеславович</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="scanline"></div>
+<canvas id="particles"></canvas>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- HERO -->
+<header id="hero">
+  <div class="hero-bg-glow"></div>
+  <div class="hero-frame"></div>
+
+  <div class="hero-chip">// С благодарностью, которую не передать словами</div>
+
+  <div class="hero-names">
+    <h1>
+      Екатерина Сергеевна
+      <span class="amp">&amp;</span>
+      Андрей Вячеславович
+    </h1>
+    <p class="hero-subtitle">Наставники. Те, кто не учит — а меняет.</p>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>scroll</span>
+  </div>
+</header>
+
+<!-- Разделитель 1 -->
+<div class="circuit-divider">
+  <svg viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0"   y1="20" x2="480" y2="20" stroke="rgba(0,200,255,0.15)"  stroke-width="1"/>
+    <rect x="480"  y="14" width="12" height="12" stroke="rgba(0,200,255,0.4)"  stroke-width="1"/>
+    <line x1="492" y1="20" x2="560" y2="20" stroke="rgba(0,200,255,0.15)"  stroke-width="1"/>
+    <circle cx="600" cy="20" r="6"  stroke="rgba(0,200,255,0.6)"  stroke-width="1"/>
+    <circle cx="600" cy="20" r="2"  fill="rgba(0,200,255,0.8)"/>
+    <line x1="606" y1="20" x2="680" y2="20" stroke="rgba(255,140,66,0.15)" stroke-width="1"/>
+    <rect x="680"  y="14" width="12" height="12" stroke="rgba(255,140,66,0.4)" stroke-width="1"/>
+    <line x1="692" y1="20" x2="1200" y2="20" stroke="rgba(255,140,66,0.15)" stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- ЛИЧНЫЕ ПОСЛАНИЯ -->
+<section id="message">
+  <div class="section">
+    <div class="message-block katya reveal">
+      <div class="person-tag">
+        <span class="dot"></span>
+        Екатерина Сергеевна
+      </div>
+      <p class="message-text">
+        Наставник — это не тот, кто объясняет материал.
+        Это тот, кто <em>видит тебя</em> — раньше, чем ты сам себя увидел.<br/><br/>
+        Вы не просто передавали знания. Вы умели остановиться, почувствовать,
+        где человеку тяжело — и быть рядом не как педагог,
+        а как <em>человек, которому важно</em>. Это редкость.
+        Это то, за что не говорят спасибо в конце урока —
+        это то, что помнят всю жизнь.
+      </p>
+    </div>
+
+    <div class="message-block andrey reveal">
+      <div class="person-tag">
+        <span class="dot"></span>
+        Андрей Вячеславович
+      </div>
+      <p class="message-text">
+        Настоящий наставник не упрощает путь.
+        Он идёт рядом — и этим даёт силы идти дальше.<br/><br/>
+        Вы никогда не делали задачи легче. Вы делали <em>меня</em> сильнее.
+        Ваша честность, ваша требовательность без жестокости,
+        ваше умение верить в человека даже когда он сам сомневается —
+        это наставничество в его настоящем смысле.
+        За это не просто благодарят. За это <em>становятся лучше</em>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- СОВМЕСТНОЕ ПОСЛАНИЕ -->
+<section id="joint">
+  <div class="section reveal">
+    <div class="section-label">// совместное</div>
+    <span class="quote-mark">"</span>
+    <p class="joint-text">
+      Наставник — это не должность и не роль.
+      Это <strong>выбор</strong>: вложить себя в другого человека,
+      не зная наверняка, что из этого выйдет.<br/><br/>
+      Вы оба делали этот выбор снова и снова —
+      отдавая своё время, силы и веру не потому что обязаны,
+      а потому что <strong>иначе не умеете</strong>.
+      Именно это невозможно забыть.
+    </p>
+  </div>
+</section>
+
+<!-- Разделитель 2 -->
+<div class="circuit-divider">
+  <svg viewBox="0 0 1200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <line x1="0"   y1="20" x2="350" y2="20"  stroke="rgba(255,140,66,0.1)"  stroke-width="1"/>
+    <circle cx="370" cy="20" r="4"            stroke="rgba(255,140,66,0.4)"  stroke-width="1"/>
+    <line x1="374" y1="20" x2="590" y2="20"  stroke="rgba(255,140,66,0.15)" stroke-width="1"/>
+    <rect x="590"  y="12" width="16" height="16" stroke="rgba(232,201,122,0.5)" stroke-width="1" transform="rotate(45 598 20)"/>
+    <line x1="606" y1="20" x2="820" y2="20"  stroke="rgba(0,200,255,0.15)"  stroke-width="1"/>
+    <circle cx="840" cy="20" r="4"            stroke="rgba(0,200,255,0.4)"   stroke-width="1"/>
+    <line x1="844" y1="20" x2="1200" y2="20" stroke="rgba(0,200,255,0.1)"   stroke-width="1"/>
+  </svg>
+</div>
+
+<!-- ЧТО ВЫ МНЕ ДАЛИ -->
+<section id="stars">
+  <div class="section">
+    <div class="section-label">// то, что вы мне дали</div>
+    <div class="stars-heading reveal">Что значит иметь настоящего наставника</div>
+
+    <div class="stars-grid">
+      <div class="star-card reveal">
+        <span class="star-icon">🧭</span>
+        <div class="star-title">Направление</div>
+        <p class="star-desc">Не ответы — а верный вектор. Наставник не говорит «иди туда», он помогает понять, куда хочешь идти ты сам.</p>
+      </div>
+      <div class="star-card reveal">
+        <span class="star-icon">🔥</span>
+        <div class="star-title">Вера раньше срока</div>
+        <p class="star-desc">Вы поверили в меня раньше, чем я заслужил это сам. Это и есть главное, что делает наставника наставником.</p>
+      </div>
+      <div class="star-card reveal">
+        <span class="star-icon">🤝</span>
+        <div class="star-title">Присутствие</div>
+        <p class="star-desc">Не просто «быть на занятии» — а быть рядом. Ваше внимание к каждому человеку было настоящим, и это чувствовалось.</p>
+      </div>
+      <div class="star-card reveal">
+        <span class="star-icon">⚡</span>
+        <div class="star-title">Честность</div>
+        <p class="star-desc">Вы не хвалили там, где этого не заслуживалось. Это было сложнее — и ценнее. Именно так рождается настоящий рост.</p>
+      </div>
+      <div class="star-card reveal">
+        <span class="star-icon">🌱</span>
+        <div class="star-title">Терпение к процессу</div>
+        <p class="star-desc">Вы знали, что развитие — это не прямая линия. И никогда не торопили туда, куда человек ещё не был готов.</p>
+      </div>
+      <div class="star-card reveal">
+        <span class="star-icon">🪞</span>
+        <div class="star-title">Зеркало</div>
+        <p class="star-desc">Лучшие наставники — те, кто помогает тебе увидеть себя яснее. Благодаря вам я узнал о себе то, чего не знал раньше.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ФИНАЛ -->
+<section id="finale">
+  <div class="finale-inner reveal">
+    <div class="finale-label">// финальные слова</div>
+    <p class="finale-text">
+      Есть вещи, которые не помещаются в слова.
+      То, что вы вложили в меня — одна из них.<br/>
+      Спасибо за то, что выбрали быть наставниками.
+      По-настоящему.
+    </p>
+    <div class="finale-sig">
+      С безграничной благодарностью — <span>Никита Веселовский</span>
+    </div>
+  </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
