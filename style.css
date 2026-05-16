@@ -26,7 +26,6 @@ body {
   color: var(--text);
   font-family: 'Cormorant Garamond', Georgia, serif;
   overflow-x: hidden;
-  cursor: none;
 }
 
 /* ── Custom cursor ── */
@@ -424,4 +423,10 @@ section, header, footer { position: relative; z-index: 2; }
   .message-block.katya    { border-right: none; }
   .stars-grid             { grid-template-columns: 1fr; }
   .message-block          { padding: 2rem 1.5rem; }
+}
+
+/* ── Скрыть кастомный курсор на тач-устройствах ── */
+@media (hover: none), (pointer: coarse) {
+  #cursor, #cursor-ring { display: none; }
+  body { cursor: auto; }
 }
